@@ -180,10 +180,8 @@ public class BrowserGameServiceImpl implements BrowserGameService {
                     .reversed()) 
                     .limit(5)
                     .forEach(entry -> {
-                        if (entry.getValue() > 3) {
                             elegibleBrowserGames.add(browserGameRepo.findById(entry.getKey()).get());
                             System.out.println("browserGamesAvgMap Key : " + entry.getKey() + " Value : " + entry.getValue());
-                        }
                     }); // filtra apenas browsergames com media > 3 e adiciona na lista de resposta
 
         return elegibleBrowserGames;
