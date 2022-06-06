@@ -1,6 +1,6 @@
 package com.gbgames.gbgamesapi.model;
 
 public enum EnumRole {
-    MEMBRO,
-    ADMIN
+    ROLE_MEMBRO,
+    ROLE_ADMIN
 }
